@@ -1,0 +1,21 @@
+# Dependencias del proyecto (versiones fijas para garantizar la reproducibilidad)
+# Instalación: pip install -r requirements.txt
+
+# Manejo de datos tabulares: lectura del CSV, limpieza, estadísticas descriptivas y tablas
+pandas==2.3.3
+
+# Cálculo numérico con arreglos y matrices; base sobre la que funcionan pandas y scikit-learn
+numpy==2.3.4
+
+# Aprendizaje automático: partición de datos, escalado, regresión logística, árbol de decisión,
+# Random Forest, validación cruzada, búsqueda de hiperparámetros y métricas (F1, AUC, recall)
+scikit-learn==1.7.2
+
+# Gráficas base: histogramas, diagramas de caja, matrices de confusión y curvas ROC
+matplotlib==3.10.7
+
+# Gráficas estadísticas sobre matplotlib: distribuciones por clase y mapas de calor de correlación
+seaborn==0.13.2
+
+# Núcleo de Jupyter que permite ejecutar los notebooks de notebooks/ desde VS Code
+ipykernel==6.30.1
