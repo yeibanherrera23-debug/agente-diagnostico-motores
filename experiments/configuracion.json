@@ -1,0 +1,5 @@
+{
+  "semilla": 42,
+  "particion": "70/15/15 estratificada",
+  "pliegues_cv": 5
+}

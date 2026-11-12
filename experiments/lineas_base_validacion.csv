@@ -1,0 +1,3 @@
+modelo,f1_macro,auc,recall_defectuoso,exactitud
+Clase predominante,0.3866,0.5,1.0,0.6304
+Regresión logística,0.5787,0.6876,0.8879,0.6655

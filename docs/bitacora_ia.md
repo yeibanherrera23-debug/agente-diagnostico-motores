@@ -1,10 +1,38 @@
 # Bitácora humano-IA
 
-Registro del uso de herramientas de IA generativa durante el proyecto.
+Registro del uso de herramientas de IA generativa durante el proyecto *Agente inteligente para el diagnóstico y evaluación del estado de motores automotrices*.
 
-| Fecha | Integrante | Herramienta | Para qué se usó | Qué se aceptó, modificó o descartó | Cómo se verificó |
-|---|---|---|---|---|---|
-| 2026-10-28 | Yeiban Herrera | Claude | Lluvia de ideas para el proyecto final y resumen de los temas del material del curso | Se aceptó la idea de un agente de diagnóstico de motores. Se descartaron las ideas de trading, tickets de soporte e inventario por considerarlas demasiado básicas | Discusión en equipo y revisión contra los temas vistos en el curso |
-| 2026-10-28 | Yeiban Herrera | Claude | Búsqueda de conjuntos de datos públicos de mantenimiento predictivo | Se aceptó el dataset de Kaggle *Automotive Vehicles Engine Health* como principal y AI4I 2020 (UCI) como respaldo. Se descartaron EngineFaultDB y NASA C-MAPSS | Licencias revisadas manualmente en Kaggle (CC0) y UCI (CC BY 4.0) |
-| 2026-11-02 | Yeiban Herrera | Claude | Revisar que la idea cumpliera los lineamientos del proyecto (ruta, línea base, métricas) y redactar el mensaje de consulta al docente | Se aceptó la ruta C con módulo de reglas complementario. Se modificó el texto del mensaje para explicar mejor el módulo de reglas | Comparación con el documento de lineamientos del docente |
-| 2026-11-10 | Yeiban Herrera | Claude | Preparar la estructura del repositorio, `requirements.txt`, `README.md` y el notebook de exploración de datos | Pendiente de revisión por el equipo | Ejecución completa del notebook y revisión de los resultados frente a la propuesta (Hito 1) |
+## Integrantes y reparto de trabajo
+
+| Integrante | Pasos a cargo |
+|---|---|
+| Yeiban Camilo Herrera Pérez | Repositorio y entorno (paso 1), exploración de datos (paso 2) |
+| Valerie Jireth Pájaro Fernández | Propuesta del Hito 1 (paso 0) |
+| Salvador Simarra Cassiani | Partición de datos y líneas base (pasos 3 y 4) |
+
+## Herramientas utilizadas
+
+| Herramienta | Uso principal |
+|---|---|
+| Claude (Anthropic) | Apoyo en código y explicación de conceptos |
+
+## Registro de uso
+
+### Entrada 1 · 2026-11-9
+
+| Campo | Detalle |
+|---|---|
+| Integrante | Yeiban Herrera |
+| Herramienta | Claude |
+| Para qué se usó | Preparar el notebook de exploración de datos |
+| Qué se aceptó, modificó o descartó | Se aceptaron los archivos. |
+| Cómo se verificó | Instalación en Windows con Python 3.14 y ejecución completa del notebook |
+### Entrada 2 · 2026-11-11
+
+| Campo | Detalle |
+|---|---|
+| Integrante | Yeiban Herrera |
+| Herramienta | Claude |
+| Para qué se usó | Completar el notebook de partición iniciado por Salvador Simarra, crear los scripts de partición y líneas base |
+| Qué se aceptó, modificó o descartó | Se conservó la celda de carga de datos del notebook original. La lógica se movió a `src/` para cumplir el requisito de ejecución desde scripts |
+| Cómo se verificó | Ejecución de `src/particion.py` y `src/lineas_base.py` |

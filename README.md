@@ -38,6 +38,23 @@ Requiere Python 3.11 a 3.14.
 python -m venv .venv
 .venv\Scripts\activate          # Windows  (Linux/macOS: source .venv/bin/activate)
 pip install -r requirements.txt
+python src/particion.py
+python src/lineas_base.py
 ```
 
-La exploración de datos está en `notebooks/01_exploracion_datos.ipynb`.
+- `src/particion.py` divide los datos en entrenamiento, validación y prueba (70/15/15, estratificada, semilla 42) y los guarda en `data/`.
+- `src/lineas_base.py` evalúa el clasificador de clase predominante y la regresión logística con validación cruzada de 5 pliegues y en el conjunto de validación. Los resultados quedan en `experiments/`.
+
+## Resultados actuales
+
+Líneas base, validación cruzada de 5 pliegues sobre el conjunto de entrenamiento:
+
+| Modelo | F1-macro | AUC | Recall defectuoso | Exactitud |
+|---|---|---|---|---|
+| Clase predominante | 0,387 | 0,500 | 1,000 | 0,631 |
+| Regresión logística | 0,576 ± 0,007 | 0,688 | 0,875 | 0,660 |
+
+## Notebooks
+
+- `notebooks/01_exploracion_datos.ipynb`: exploración de datos.
+- `notebooks/02_particion_y_lineas_base.ipynb`: partición sin fuga y líneas base.
